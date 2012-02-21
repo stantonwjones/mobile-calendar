@@ -1,3 +1,4 @@
+var MobileCalendar = function() {
 //  Requires xui.js
 x$(document).on('DOMContentLoaded', function() {
   initMobCal();
@@ -174,4 +175,5 @@ function resetCalendar() {
 function getDateString(dayCell) {
   var dayNum = parseInt(dayCell.innerHTML);
   return (formatNumberLength(dayNum) + '/' + formatNumberLength(window.mobCal.calDate.getMonth() + 1) + '/' + window.mobCal.calDate.getFullYear());
+}
 }
